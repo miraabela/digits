@@ -7,7 +7,6 @@ import Note from './Note';
 import AddNote from './AddNote';
 import { Contacts } from '/imports/api/contact/contact';
 
-
 /** Renders a single row in the List Stuff table. See pages/ListContacts.jsx. */
 class Contact extends React.Component {
 
@@ -17,7 +16,9 @@ class Contact extends React.Component {
   }
 
   onClick() {
-    Contacts.remove(this.props.contact._id, this.deleteCallBack);
+    if (confirm('Do you really want to delete this contact??')) {
+      Contacts.remove(this.props.contact._id, this.deleteCallBack);
+    }
   }
 
   deleteCallBack(error) {
