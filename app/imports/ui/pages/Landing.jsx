@@ -11,7 +11,8 @@ class Landing extends React.Component {
           <Grid.Column>
             <Icon inverted size = 'massive' name='users'/>
             <Header as='h1' inverted>Multiple Users</Header>
-            <Header as='h3' inverted>This address book enables any number of users to register and save their business contacts. You can only see the contacts you have created.</Header>
+            <Header as='h3' inverted>This address book enables any number of users to register
+              and save their business contacts. You can only see the contacts you have created.</Header>
           </Grid.Column>
 
           <Grid.Column>
@@ -23,7 +24,8 @@ class Landing extends React.Component {
           <Grid.Column>
             <Icon inverted size = 'massive' name='calendar check outline'/>
             <Header as='h1' inverted>Timestamped Notes</Header>
-            <Header as='h3' inverted>Each time you make a contact with digits, you can write a note that summarizes the conversation. This is a note saved along with a timestamp with the contact.</Header>
+            <Header as='h3' inverted>Each time you make a contact with digits, you can write a note that
+              summarizes the conversation. This is a note saved along with a timestamp with the contact.</Header>
           </Grid.Column>
 
         </Grid>

@@ -23,10 +23,9 @@ class ListContacts extends React.Component {
           <Header inverted as="h2" textAlign="center">List Contacts</Header>
           <Card.Group>
             {this.props.contacts.map((contact, index) => {
-              return (<Contact key={index}
-                               contact={contact}
+              return (<Contact key={index} contact={contact}
                                notes={this.props.notes.filter(note => (note.contactId === contact._id))}/>);
-            })};
+              })};
           </Card.Group>
         </Container>
     );
@@ -37,6 +36,7 @@ class ListContacts extends React.Component {
 ListContacts.propTypes = {
   contacts: PropTypes.array.isRequired,
   ready: PropTypes.bool.isRequired,
+  notes: PropTypes.array.isRequired,
 };
 
 /** withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker */
